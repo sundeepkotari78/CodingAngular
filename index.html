@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head lang="en">
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Angular Test</title>  
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+		<script src="ng-grid.min.js"></script>
+		<link rel="stylesheet" href="ng-grid.min.css" />
+    </head>
+    <body ng-controller="MyCtrl">
+		<h3>@Logo</h3>
+		<div class="container">
+		<div class="row">
+		<form name="MyForm">
+		<div class="panel panel-default">
+		<div class="panel-body">
+		<label class="center-block">
+		<p class="col-lg-6">Please enter the API Url for generating a list of Tabular Data:</p>
+		<input type="url" class="col-lg-4"> </label>
+		</div>
+		</div>
+		</form>
+		</div>
+		<div class="row">
+		<button class="center-block btn btn-primary btn-lg" type="submit">Submit</button>
+		</br>
+		</div>
+		<div class="row">
+        <div class="gridStyle center-block" ng-grid="gridOptions"></div>
+		</div>
+		</div>
+    </body>
+</html>
